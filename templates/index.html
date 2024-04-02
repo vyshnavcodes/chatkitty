@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF_8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chatkitty</title>
+    </head>
+    <body>
+        <h1>Welcome to Chatkitty!</h1>
+        <div id="chat-window">
+        </div>
+        <form id="chat-form">
+            <input type="text" id="message" placeholder="Type your message here..">
+            <button type="submit">Send</button>
+        </form>
+
+        <h2> Contribute to knowledge base </h2>
+        <form method="POST" action="/submit">
+            <label for="question">Question:</label>
+            <textarea id="question" name="question" rows="5"></textarea>
+            <br>
+            <label for="answer">Answer:</label>
+            <textarea id="answer" name="answer" rows="5"></textarea>
+            <br>
+            <button type="submit">Submit entry</button>
+        </form>
+        
+        <script src="script.js"></script>
+
+    </body>
+</html>
